@@ -1,0 +1,29 @@
+public class Produto {
+    private String nome;
+    private String codigo;
+    private double preco;
+
+    public Produto(String nome, String codigo, double preco) {
+        this.nome = nome;
+        this.codigo = codigo;
+        this.preco = preco;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome + ", Código: " + codigo + ", Preço: " + preco);
+    }
+
+    public void exibirInformacoes(String formato) {
+        if (formato.equals("detalhado")) {
+            System.out.println("Produto Detalhado - Nome: " + nome + ", Código: " + codigo + ", Preço: " + preco);
+        } else {
+            exibirInformacoes();
+        }
+    }
+
+    public static void main(String[] args) {
+        Produto produto = new Produto("Cadeira", "1234", 150.0);
+        produto.exibirInformacoes();
+        produto.exibirInformacoes("detalhado");
+    }
+}
