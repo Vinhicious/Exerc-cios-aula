@@ -1,14 +1,14 @@
 public class CalculadoraArea {
     public static double calcularArea(double lado) {
-        return lado * lado; // Área de um quadrado
+        return lado * lado; 
     }
 
     public static double calcularArea(double largura, double altura) {
-        return largura * altura; // Área de um retângulo
+        return largura * altura; 
     }
 
     public static double calcularArea(int raio) {
-        return Math.PI * raio * raio; // Área de um círculo
+        return Math.PI * raio * raio;
     }
 
     public static void main(String[] args) {
