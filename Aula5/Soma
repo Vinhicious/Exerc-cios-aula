@@ -1,0 +1,23 @@
+public class Soma {
+    public static int soma(int a, int b) {
+        return a + b;
+    }
+
+    public static double soma(double a, double b) {
+        return a + b;
+    }
+
+    public static double soma(int a, double b) {
+        return a + b;
+    }
+
+    public static double soma(double a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Soma de inteiros: " + soma(5, 10));
+        System.out.println("Soma de decimais: " + soma(5.5, 10.5));
+        System.out.println("Soma de inteiro e decimal: " + soma(5, 10.5));
+    }
+}
