@@ -1,0 +1,32 @@
+abstract class Animal {
+    abstract void fazerSom();
+
+    void comer() {
+        System.out.println("O animal está comendo.");
+    }
+}
+
+class Cachorro extends Animal {
+    void fazerSom() {
+        System.out.println("O cachorro faz: au au!");
+    }
+}
+
+class Gato extends Animal {
+    void fazerSom() {
+        System.out.println("O gato faz: miau!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal cachorro = new Cachorro();
+        Animal gato = new Gato();
+
+        cachorro.fazerSom();
+        cachorro.comer();
+
+        gato.fazerSom();
+        gato.comer();
+    }
+}
