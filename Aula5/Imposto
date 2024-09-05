@@ -1,0 +1,32 @@
+public class ImpostoRenda {
+    private double salario;
+
+    public ImpostoRenda(double salario) {
+        this.salario = salario;
+    }
+
+    public double calcularImposto() {
+        double imposto;
+        if (salario <= 2500) {
+            imposto = salario * 0.05;
+        } else if (salario <= 5000) {
+            imposto = salario * 0.10;
+        } else {
+            imposto = salario * 0.15;
+        }
+        return imposto;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public static void main(String[] args) {
+        ImpostoRenda pessoa = new ImpostoRenda(3000);
+        System.out.println("Imposto a pagar: " + pessoa.calcularImposto());
+    }
+}
