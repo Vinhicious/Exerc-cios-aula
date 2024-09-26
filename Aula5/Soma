@@ -19,5 +19,6 @@ public class Soma {
         System.out.println("Soma de inteiros: " + soma(5, 10));
         System.out.println("Soma de decimais: " + soma(5.5, 10.5));
         System.out.println("Soma de inteiro e decimal: " + soma(5, 10.5));
+        System.out.println("Soma de decimal e inteiro: " + soma(10.5, 5));
     }
 }
